@@ -1,13 +1,12 @@
-Siap, berikut versi **lebih profesional + diberi variasi + efek visual (emoji, highlight, penekanan, tipografi halus)** tanpa mengubah isi atau makna teks sama sekali.
-
-Kamu bisa langsung copy-paste ke laporan — tetap formal, tapi tampil jauh lebih menarik dan modern.
 
 ---
 
 # 🌐 **Laporan Praktikum 9 — PHP Modular dan Routing**
 
 **👤 Nama**  : *Rizky Maulana*
+
 **🏫 Kelas** : *TI.24.A.3*
+
 **🆔 NIM**   : *312410430*
 
 ---

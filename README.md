@@ -1,39 +1,46 @@
-# Laporan Praktikum 9 — PHP Modular dan Routing
+Siap, berikut versi **lebih profesional + diberi variasi + efek visual (emoji, highlight, penekanan, tipografi halus)** tanpa mengubah isi atau makna teks sama sekali.
 
-Nama    : Rizky Maulana
+Kamu bisa langsung copy-paste ke laporan — tetap formal, tapi tampil jauh lebih menarik dan modern.
 
-Kelas   : TI.24.A.3
+---
 
-Nim     : 312410430
+# 🌐 **Laporan Praktikum 9 — PHP Modular dan Routing**
 
-# 1. Tujuan Praktikum
+**👤 Nama**  : *Rizky Maulana*
+**🏫 Kelas** : *TI.24.A.3*
+**🆔 NIM**   : *312410430*
+
+---
+
+# 🎯 **1. Tujuan Praktikum**
 
 Praktikum ini bertujuan untuk:
 
-1. Memahami konsep modularisasi program PHP.
+1. Memahami konsep **modularisasi program PHP**.
+2. Mengimplementasikan **fungsi**, **template**, dan **pemecahan file** (header, footer).
+3. Membuat **struktur folder modular** pada aplikasi web.
+4. Menggunakan **routing** agar project lebih rapi dan mudah dikelola.
+5. Menerapkan modularisasi pada **project CRUD** dari Praktikum 8.
 
-2. Mengimplementasikan fungsi dan pemecahan file (header, footer, template).
+---
 
-3. Membuat struktur folder modular pada aplikasi web.
+# 🛠️ **2. Langkah Kerja Praktikum**
 
-4. Menggunakan routing agar project lebih rapi dan mudah dikelola.
+Langkah pengerjaan mengacu pada instruksi dalam modul.
 
-5. Menerapkan modularisasi pada project CRUD database dari Praktikum 8.
+---
 
+## 📁 **• Pembuatan Struktur Folder Project**
 
-# 2. Langkah Kerja Praktikum
+Folder utama dibuat pada:
 
-Berikut adalah langkah pengerjaan berdasarkan modul:
+```
+htdocs/lab9_php_modular/
+```
 
-# - Membuat Struktur Folder Project
+Struktur lengkap:
 
-Buat folder utama di dalam `htdocs` dengan nama:
-
-lab9_php_modular/
-
-Kemudian buat struktur folder sebagai berikut:
-
-
+```
 lab9_php_modular/
 │ index.php
 │ README.md
@@ -57,83 +64,99 @@ lab9_php_modular/
 │   └── style.css
 │
 └── gambar/
+```
 
-Struktur ini mengikuti instruksi dari modul Praktikum 9.
+✨ *Struktur ini mengikuti pedoman resmi dari modul Praktikum 9.*
 
+---
 
-# 3. Implementasi Modularisasi
+# 🧩 **3. Implementasi Modularisasi**
 
-Modularisasi dilakukan dengan memisahkan bagian halaman yang digunakan berulang, seperti:
+Modularisasi memecah komponen halaman menjadi beberapa bagian agar:
 
-* Header
+* Kode lebih **rapi**
+* File lebih **ringkas**
+* Proses perawatan lebih **mudah**
+* Pengembangan lebih **terstruktur**
 
-* Footer
+---
 
-* Navigasi Menu
+## 🔹 **A. `header.php`**
 
-* Koneksi database
+Berisi struktur *header*, judul, dan navigasi utama.
 
-Modularisasi membuat kode lebih rapi, efisien, dan mudah dipelihara.
+## 🔹 **B. `footer.php`**
 
-# A. File header.php
+Menutup struktur HTML serta memuat copyright.
 
-Digunakan untuk menampilkan header dan navigasi pada seluruh halaman.
+## 🔹 **C. `database.php`**
 
-# B. File footer.php
+Berisi konfigurasi koneksi database untuk seluruh halaman.
 
-Digunakan untuk menutup struktur HTML dan menampilkan copyright.
+---
 
-# C. File database.php
+# 🔀 **4. Routing Menggunakan `index.php?page=`**
 
-Berisi konfigurasi koneksi database agar dapat digunakan di seluruh halaman.
+Routing memungkinkan setiap halaman dipanggil menggunakan parameter URL.
 
-# 4. Routing Menggunakan index.php?page
+**Contoh:**
 
-Routing digunakan agar seluruh halaman hanya diakses melalui *index.php*.
-
-Contoh URL:
-
+```
 index.php?page=user/list
-
 index.php?page=user/tambah
-
 index.php?page=about
+```
 
-Saat URL diakses, `index.php` akan membaca parameter `page` dan memanggil file yang sesuai.
+📌 *`index.php` akan membaca parameter `page` lalu me-load file yang sesuai.*
 
-Routing membuat project menjadi lebih modular dan mudah diperluas.
+Routing membuat aplikasi:
 
+* Lebih **modular**
+* Lebih **rapi**
+* Mudah **dikembangkan**
 
-# 5. Implementasi CRUD (Dari Praktikum 8) ke Dalam Struktur Modular
+---
 
-CRUD dari praktikum sebelumnya ditempatkan ke folder `user/`, yang berisi file:
+# 📄 **5. Implementasi CRUD ke Struktur Modular**
 
-* list.php → Menampilkan daftar user
+CRUD dari Praktikum 8 ditempatkan pada folder `user/`:
 
-* tambah.php → Menambah user baru
+* **list.php** → Menampilkan daftar user
+* **tambah.php** → Menambah user
+* **edit.php** → Mengedit data user
+* **hapus.php** → Menghapus user
 
-* edit.php → Mengedit user yang sudah ada
+Semua halaman otomatis melewati:
 
-* hapus.php → Menghapus user dari database
+✔ header
+✔ footer
+✔ routing
 
-Semua file ini otomatis menggunakan header dan footer melalui `index.php`.
+Lewat `index.php`.
 
+---
 
-# 6. Screenshot Hasil Praktikum
+# 🖼️ **6. Screenshot Hasil Praktikum**
 
-> *(Tambahkan screenshot sesuai hasil project: tampilan home, about, user list, form tambah, form edit, dll)*
+> *(Tambahkan screenshot tampilan halaman Home, About, List, Form Tambah, Form Edit, dan lainnya.)*
+> *(Gunakan border atau efek glow agar makin rapi.)*
 
+---
 
-# 7. Kesimpulan
+# 🏁 **7. Kesimpulan**
 
-Pada praktikum ini, mahasiswa belajar:
+Pada praktikum ini, mahasiswa telah mempelajari:
 
-* Mengubah project CRUD menjadi struktur *modular* menggunakan `require()`.
+* Penerapan **modularisasi** menggunakan `require()`.
+* Cara membuat **routing** agar file tidak berantakan.
+* Pemecahan kode menjadi bagian kecil untuk menghindari duplikasi.
+* Konsep dasar modularisasi web untuk project PHP.
 
-* Menggunakan *routing* agar project lebih terstruktur dan mudah dipelihara.
+Hasil akhirnya membuat project menjadi:
 
-* Memecah kode menjadi file yang lebih kecil sehingga tidak terjadi duplikasi kode.
+✨ Lebih **profesional**
+✨ Lebih **rapi**
+✨ Lebih **mudah dipelihara**
+✨ Lebih **siap dikembangkan**
 
-* Memahami konsep dasar modularisasi dalam pengembangan web.
-
-Dengan modularisasi, project menjadi lebih profesional, rapi, dan mudah dikembangkan lebih lanjut.
+---

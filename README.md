@@ -1,6 +1,6 @@
 # Laporan Praktikum 9 — PHP Modular dan Routing
 
-Nama    : Mamang Jebog
+Nama    : Rizky Maulana
 
 Kelas   : TI.24.A.3
 
